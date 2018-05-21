@@ -11,15 +11,12 @@ import edu.sergioArboleda.dao.ServiceImpl;
 import edu.sergioArboleda.dao.SingletonConnection;
 import java.util.List;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author white
+ * @author Nicolas
  */
 public class DogFacade extends ServiceImpl<Dog> {
-    private EntityManagerFactory ENTITY_MANAGER_FACTORY; 
     public DogFacade() throws ConexionException {
         super(Dog.class);
         try{
