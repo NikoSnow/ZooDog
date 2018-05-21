@@ -29,14 +29,14 @@ public class DogService {
         facade = new DogFacade();
         List<Dog> dogs = facade.findAll();
         for (Dog dog : dogs) {
-            DogDTO dto = new DogDTO();
-            dto.setIdDog(dog.getIdDog());
-            dto.setRaza(dog.getRaza());
-            dto.setGrupo(dog.getGrupo());
-            dto.setPersonalidad(dog.getPersonalidad());
-            dto.setEnergia(dog.getEnergia());
-            dto.setDescripcion(dog.getDescripcion());
-            dogdto.add(dto);
+            DogDTO ddto = new DogDTO();
+            ddto.setIdDog(dog.getIdDog());
+            ddto.setRaza(dog.getRaza());
+            ddto.setGrupo(dog.getGrupo());
+            ddto.setPersonalidad(dog.getPersonalidad());
+            ddto.setEnergia(dog.getEnergia());
+            ddto.setDescripcion(dog.getDescripcion());
+            dogdto.add(ddto);
         }
 
         return dogdto;

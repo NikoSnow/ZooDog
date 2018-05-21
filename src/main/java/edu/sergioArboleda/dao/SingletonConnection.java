@@ -21,7 +21,7 @@ import javax.persistence.Persistence;
  */
 public class SingletonConnection {
     private static EntityManager em ;
-    private  static EntityManagerFactory emf;
+    private static EntityManagerFactory emf;
     private static void initConnection(){
       startOperation();
     }
