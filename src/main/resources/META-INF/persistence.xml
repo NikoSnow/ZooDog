@@ -5,6 +5,7 @@
     
     <class>com.mycompany.jpa.Dog</class>
     <class>com.mycompany.jpa.Comentario</class>
+    <class>com.mycompany.jpa.Usuario</class>
   
   </persistence-unit>
 </persistence>
