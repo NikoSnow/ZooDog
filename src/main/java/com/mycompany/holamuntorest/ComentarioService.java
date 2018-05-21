@@ -38,7 +38,7 @@ public class ComentarioService {
             cdto.setIdComentario(comentario.getIdComentario());
             cdto.setFecha(comentario.getFecha());
             cdto.setComentario(comentario.getComentario());
-            cdto.setIdUsuario(comentario.getIdUsuario());
+            cdto.setUsuario(comentario.getUsuario());
             comdto.add(cdto);
         }
         return comdto;
@@ -56,7 +56,7 @@ public class ComentarioService {
         comentarioJPA.setIdComentario(comentario.getIdComentario());
         comentarioJPA.setFecha(comentario.getFecha());
         comentarioJPA.setComentario(comentario.getComentario());
-        comentarioJPA.setIdUsuario(comentario.getIdUsuario());
+        comentarioJPA.setUsuario(comentario.getUsuario());
         facade.save(comentarioJPA);
         return cdto;
         }

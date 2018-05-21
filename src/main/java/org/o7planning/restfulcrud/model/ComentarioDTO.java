@@ -15,7 +15,7 @@ public class ComentarioDTO {
     private Integer idComentario;
     private String comentario;    
     private String fecha;
-    private Integer idUsuario;
+    private String usuario;
 
     public Integer getIdComentario() {
         return idComentario;
@@ -41,13 +41,15 @@ public class ComentarioDTO {
         this.fecha = fecha;
     }
 
-    public Integer getIdUsuario() {
-        return idUsuario;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setIdUsuario(Integer idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
+
+    
 
     
     

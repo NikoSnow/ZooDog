@@ -6,8 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
@@ -24,15 +22,11 @@ public class Comentario implements Serializable{
     @Column(name="fecha")
     private String fecha;
     
-    @Column(name="idUsuario")
-    private Integer idUsuario;
+    @Column(name="usuario")
+    private String usuario;
 
     public Comentario() {
     }
-    
-    @ManyToOne
-    @JoinColumn(name="idUsuario")
-    private Usuario usuario;
 
     public Integer getIdComentario() {
         return idComentario;
@@ -58,25 +52,19 @@ public class Comentario implements Serializable{
         this.fecha = fecha;
     }
 
-    public Integer getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(Integer idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public Usuario getUsuario() {
+    public String getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
 
     @Override
     public String toString() {
-        return "Comentario{" + "idComentario=" + idComentario + ", comentario=" + comentario + ", fecha=" + fecha + ", idUsuario=" + idUsuario + ", usuario=" + usuario + '}';
+        return "Comentario{" + "idComentario=" + idComentario + ", comentario=" + comentario + ", fecha=" + fecha + ", usuario=" + usuario + '}';
     }
- 
+    
+    
+   
 }
