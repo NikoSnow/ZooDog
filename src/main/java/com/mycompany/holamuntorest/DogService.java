@@ -17,7 +17,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import org.o7planning.restfulcrud.model.DogDTO;
 
-@Path("/perro")
+@Path("/dog")
 public class DogService {
     
     @GET
