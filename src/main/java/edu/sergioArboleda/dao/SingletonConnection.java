@@ -53,6 +53,11 @@ public class SingletonConnection {
             String username = dbUri.getUserInfo().split(":")[0];
             String password = dbUri.getUserInfo().split(":")[1];
             String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+            
+            //String username = "tuylsjdftswkmm";
+            //String password = "21d4154daa0f1545c75b2773c59e5d93c7f6ad49eed6558bbec3c62d4a1a2d7c";
+            //String dbUrl = "jdbc:postgresql://tuylsjdftswkmm:21d4154daa0f1545c75b2773c59e5d93c7f6ad49eed6558bbec3c62d4a1a2d7c@ec2-23-23-180-121.compute-1.amazonaws.com:5432/dd7g29qjoe1ho4";
+
 
             Map<String, String> properties = new HashMap<String, String>();
             properties.put("javax.persistence.jdbc.url", dbUrl);
