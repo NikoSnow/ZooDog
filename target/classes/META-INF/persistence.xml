@@ -4,7 +4,6 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>com.mycompany.jpa.Dog</class>
     <class>com.mycompany.jpa.Comentario</class>
-   
-   
+  
   </persistence-unit>
 </persistence>
