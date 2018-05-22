@@ -15,7 +15,7 @@ public class Comentario implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idComentario;
-    
+        
     @Column(name="Comentario")
     private String comentario;
     
